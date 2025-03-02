@@ -56,7 +56,7 @@ Here, to optimize the query, we need to create a single index on the score colum
 <br />
 <div align="center">
   <img src="images/erdDatabase.png" alt="Logo" width="450">
-  <p>Diagram 1. Illustration database ERD</p>
+  <p>Diagram 1. Illustration database ERD <a href="https://drive.google.com/file/d/1C91SCwdj4bD-rTZby8zGTlrFbFSjcYxe/view?usp=sharing" target="_blank">(draw.io)</a></p>
 </div>
 
 ## Authentication and Authorization:
@@ -122,7 +122,7 @@ The following error codes might be returned in the response body:
 <br />
 <div align="center">
   <img src="images/workflow.png" alt="Logo" width="1000">
-  <p>Diagram 2. Illustration workflow of score updation</p>
+  <p>Diagram 2. Illustration workflow of score updation <a href="https://drive.google.com/file/d/1C91SCwdj4bD-rTZby8zGTlrFbFSjcYxe/view?usp=sharing" target="_blank">(draw.io)</a></p>
 </div>
 
 1. **User Action:** A user action triggers a score update API call.
