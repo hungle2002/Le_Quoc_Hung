@@ -118,7 +118,7 @@ The following error codes might be returned in the response body:
 
 
 ## Score Update Workflow:
-### Diagram 2: Score Update Workflow
+### Diagram 2: Score Update Workflow - Sequence Diagram
 <br />
 <div align="center">
   <img src="images/workflow.png" alt="Logo" width="1000">
@@ -150,15 +150,13 @@ The following error codes might be returned in the response body:
 
 ## Additional Considerations and Improvements
 ### - Rate Limiting:
-- Implement rate limiting on the /api/v1/scores/update endpoint to prevent abuse (e.g., limit to X requests per minute per user).
+- Implement rate limiting on the /api/v1/scores/update endpoint to prevent abuse (limit to N requests per minute per user).
 ### - Logging and Monitoring:
 - Log all score update events for auditing and debugging.
 - Monitor API performance and WebSocket connections to ensure the system is healthy.
 ### - Scalability:
-- Design the system to extend beyond the top 10 leaderboard easily (e.g., top 1000) without major refactoring.
+- Design the system to easily extend beyond the top 10 leaderboard easily (top 1000) without major refactoring.
 ### - Testing:
 - Develop unit tests, integration tests, and load tests to ensure the module handles high update volumes and remains secure.
-### - Documentation:
-- Maintain and update this documentation with version control. Ensure that all diagram changes and design updates are reflected accordingly.
   
 
