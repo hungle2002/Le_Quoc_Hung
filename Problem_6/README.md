@@ -38,7 +38,7 @@ existing website to provide a dynamic and secure scorekeeping system.
  A relational database to store persistent user score data.
 #### Caching
  Use a cached database (Redis) to quickly query and manage the top 10 leaderboard.
- - Redis Sorted Sets: Use Redis sorted sets (ZADD, ZRANGE,...) for efficient ranking.
+ - Redis Sorted Sets: Use Redis sorted sets (ZSET) for efficient ranking.
  - Cache Consistency: Maintain consistency between Redis and the primary database using event-driven updates and periodic background refresh jobs.
 
 ## Database design
