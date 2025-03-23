@@ -156,6 +156,12 @@ The following error codes might be returned in the response body:
 - Monitor API performance and WebSocket connections to ensure the system is healthy.
 ### - Scalability:
 - Design the system to easily extend beyond the top 10 leaderboard easily (top 1000) without major refactoring.
+  + Store all user scores in a Redis ZSET: we can get top 10, 100, 1000,... easily
+  + Use ZADD to update and ZRANGE to fetch top-ranked users.
+### - Caching:
+- Cache individual user scores using Redis Strings
+  + Allows quick lookups when checking a user's score without querying the database.
+  + Use SETEX to store user scores with an expiration time to prevent stale data and periodically sync Redis with the database.
 ### - Testing:
 - Develop unit tests, integration tests, and load tests to ensure the module handles high update volumes and remains secure.
   
